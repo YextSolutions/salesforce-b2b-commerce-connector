@@ -1,0 +1,17 @@
+{
+  "$id": "salesforceB2bCommerce_product",
+  "$schema": "https://schema.yext.com/config/km/field-eligibility-group/v1",
+  "name": "SF Product",
+  "entityType": "product",
+  "fields": [
+    "salesforceB2bCommerce_createdDate",
+    "salesforceB2bCommerce_family",
+    "salesforceB2bCommerce_isActive",
+    "salesforceB2bCommerce_isArchived1",
+    "salesforceB2bCommerce_isDeleted",
+    "salesforceB2bCommerce_lastModifiedDate",
+    "salesforceB2bCommerce_productCode",
+    "salesforceB2bCommerce_quantityUnitOfMeasure"
+  ],
+  "required": []
+}

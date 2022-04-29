@@ -1,0 +1,11 @@
+{
+  "$id": "salesforceB2bCommerce_isActive",
+  "$schema": "https://schema.yext.com/config/km/field/v1",
+  "displayName": "Is Active",
+  "group": "NONE",
+  "localization": "PRIMARY_ONLY",
+  "type": {
+    "booleanType": {}
+  },
+  "typeId": "boolean"
+}

@@ -1,0 +1,217 @@
+{
+  "$id": "salesforceB2bCommerce_b2BCommerceCloudConnector",
+  "$schema": "https://schema.yext.com/config/km/connector/v3",
+  "displayName": "Salesforce B2B Commerce Cloud Connector",
+  "entityType": "product",
+  "source": {
+    "sourceConfig": {
+      "nativeSourceConfig": {
+        "source": "salesforce",
+        "operation": "fetchObjects",
+        "inputs": {
+          "instanceUrl": "${{salesforceInstanceUrl}}",
+          "object": "Product2",
+          "salesforceLinkedAccount": "${{salesforceLinkedAccountId}}"
+        }
+      }
+    },
+    "selectors": [
+      {
+        "type": "JSON",
+        "header": "attributes.type",
+        "path": "attributes.type"
+      },
+      {
+        "type": "JSON",
+        "header": "attributes.url",
+        "path": "attributes.url"
+      },
+      {
+        "type": "JSON",
+        "header": "Id",
+        "path": "Id"
+      },
+      {
+        "type": "JSON",
+        "header": "Name",
+        "path": "Name"
+      },
+      {
+        "type": "JSON",
+        "header": "ProductCode",
+        "path": "ProductCode"
+      },
+      {
+        "type": "JSON",
+        "header": "Description",
+        "path": "Description"
+      },
+      {
+        "type": "JSON",
+        "header": "IsActive",
+        "path": "IsActive"
+      },
+      {
+        "type": "JSON",
+        "header": "CreatedDate",
+        "path": "CreatedDate"
+      },
+      {
+        "type": "JSON",
+        "header": "CreatedById",
+        "path": "CreatedById"
+      },
+      {
+        "type": "JSON",
+        "header": "LastModifiedDate",
+        "path": "LastModifiedDate"
+      },
+      {
+        "type": "JSON",
+        "header": "LastModifiedById",
+        "path": "LastModifiedById"
+      },
+      {
+        "type": "JSON",
+        "header": "SystemModstamp",
+        "path": "SystemModstamp"
+      },
+      {
+        "type": "JSON",
+        "header": "LastReferencedDate",
+        "path": "LastReferencedDate"
+      },
+      {
+        "type": "JSON",
+        "header": "LastViewedDate",
+        "path": "LastViewedDate"
+      },
+      {
+        "type": "JSON",
+        "header": "QuantityUnitOfMeasure",
+        "path": "QuantityUnitOfMeasure"
+      },
+      {
+        "type": "JSON",
+        "header": "DisplayUrl",
+        "path": "DisplayUrl"
+      },
+      {
+        "type": "JSON",
+        "header": "ExternalId",
+        "path": "ExternalId"
+      },
+      {
+        "type": "JSON",
+        "header": "ExternalDataSourceId",
+        "path": "ExternalDataSourceId"
+      },
+      {
+        "type": "JSON",
+        "header": "Family",
+        "path": "Family"
+      },
+      {
+        "type": "JSON",
+        "header": "StockKeepingUnit",
+        "path": "StockKeepingUnit"
+      },
+      {
+        "type": "JSON",
+        "header": "IsDeleted",
+        "path": "IsDeleted"
+      },
+      {
+        "type": "JSON",
+        "header": "IsArchived",
+        "path": "IsArchived"
+      }
+    ]
+  },
+  "transforms": [
+    {
+      "formatDates": {
+        "inputHeaders": {
+          "headers": [
+            "CreatedDate",
+            "LastModifiedDate",
+            "LastReferencedDate",
+            "LastViewedDate"
+          ]
+        },
+        "inputFormat": "yyyy-MM-dd\u0027T\u0027HH:mm:ss.SSSX"
+      }
+    }
+  ],
+  "mappings": [
+    {
+      "field": "landingPageUrl",
+      "header": "DisplayUrl",
+      "subfieldPath": []
+    },
+    {
+      "field": "richTextDescription",
+      "header": "Description",
+      "subfieldPath": []
+    },
+    {
+      "field": "sku",
+      "header": "StockKeepingUnit",
+      "subfieldPath": []
+    },
+    {
+      "field": "entityId",
+      "header": "Id",
+      "subfieldPath": []
+    },
+    {
+      "field": "name",
+      "header": "Name",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceB2bCommerce_productCode",
+      "header": "ProductCode",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceB2bCommerce_isActive",
+      "header": "IsActive",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceB2bCommerce_createdDate",
+      "header": "CreatedDate",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceB2bCommerce_lastModifiedDate",
+      "header": "LastModifiedDate",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceB2bCommerce_family",
+      "header": "Family",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceB2bCommerce_isDeleted",
+      "header": "IsDeleted",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceB2bCommerce_isArchived",
+      "header": "IsArchived",
+      "subfieldPath": []
+    }
+  ],
+  "scheduleConfig": {
+    "customSchedule": {
+      "timeZone": "America/New_York",
+      "startDate": "2021-05-19",
+      "startTime": "03:00",
+      "frequencyType": "DAILY"
+    },
+    "runMode": "COMPREHENSIVE"
+  }
+}

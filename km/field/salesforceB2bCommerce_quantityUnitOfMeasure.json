@@ -1,0 +1,14 @@
+{
+  "$id": "salesforceB2bCommerce_quantityUnitOfMeasure",
+  "$schema": "https://schema.yext.com/config/km/field/v1",
+  "description": "Salesforce specific field. Unit of the product; for example, kilograms, liters, or cases.",
+  "displayName": "Quantity Unit of Measure",
+  "group": "NONE",
+  "localization": "PRIMARY_ONLY",
+  "type": {
+    "stringType": {
+      "stereotype": "SIMPLE"
+    }
+  },
+  "typeId": "string"
+}

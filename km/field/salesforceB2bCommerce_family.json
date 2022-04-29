@@ -1,0 +1,14 @@
+{
+  "$id": "salesforceB2bCommerce_family",
+  "$schema": "https://schema.yext.com/config/km/field/v1",
+  "description": "Salesforce Specific field. Name of the product family associated with this record.",
+  "displayName": "Family",
+  "group": "NONE",
+  "localization": "PRIMARY_ONLY",
+  "type": {
+    "stringType": {
+      "stereotype": "SIMPLE"
+    }
+  },
+  "typeId": "string"
+}

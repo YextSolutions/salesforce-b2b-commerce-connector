@@ -54,7 +54,7 @@ Follow the step-by-step instructions below to install the Salesforce B2B Commerc
 
 If you are an existing Yext customer, you can install the  Slack Public Content Connector here <https://www.yext.com/s/me/apps/EDIT>
 
-If you are currently using a Yext sandbox account, you can install the Slack Public Content Connector here <https://sandbox.yext.com/s/me/apps/EDIT>.
+If you are currently using a Yext sandbox account, you can install the Slack Public Content Connector here <https://sandbox.yext.com/s/me/apps/149910>.
 
 If you are not an existing customer, but interested in learning more, try out a free trial here for a production account, or sign up for Hitchhikers and get started with a sandbox account, here <https://hitchhikers.yext.com/>. 
 

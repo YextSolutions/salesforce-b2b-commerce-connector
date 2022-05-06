@@ -125,6 +125,76 @@
         "type": "JSON",
         "header": "IsArchived",
         "path": "IsArchived"
+      },
+      {
+        "type": "JSON",
+        "header": "CanUseQuantitySchedule",
+        "path": "CanUseQuantitySchedule"
+      },
+      {
+        "type": "JSON",
+        "header": "CanUseRevenueSchedule",
+        "path": "CanUseRevenueSchedule"
+      },
+      {
+        "type": "JSON",
+        "header": "ConnectionReceivedId",
+        "path": "ConnectionReceivedId"
+      },
+      {
+        "type": "JSON",
+        "header": "ConnectionSentId",
+        "path": "ConnectionSentId"
+      },
+      {
+        "type": "JSON",
+        "header": "CurrencyIsoCode",
+        "path": "CurrencyIsoCode"
+      },
+      {
+        "type": "JSON",
+        "header": "NumberOfQuantityInstallments",
+        "path": "NumberOfQuantityInstallments"
+      },
+      {
+        "type": "JSON",
+        "header": "NumberOfRevenueInstallments",
+        "path": "NumberOfRevenueInstallments"
+      },
+      {
+        "type": "JSON",
+        "header": "ProductClass",
+        "path": "ProductClass"
+      },
+      {
+        "type": "JSON",
+        "header": "QuantityInstallmentPeriod",
+        "path": "QuantityInstallmentPeriod"
+      },
+      {
+        "type": "JSON",
+        "header": "QuantityScheduleType",
+        "path": "QuantityScheduleType"
+      },
+      {
+        "type": "JSON",
+        "header": "RecalculateTotalPrice",
+        "path": "RecalculateTotalPrice"
+      },
+      {
+        "type": "JSON",
+        "header": "RevenueInstallmentPeriod",
+        "path": "RevenueInstallmentPeriod"
+      },
+      {
+        "type": "JSON",
+        "header": "RevenueScheduleType",
+        "path": "RevenueScheduleType"
+      },
+      {
+        "type": "JSON",
+        "header": "Type",
+        "path": "Type"
       }
     ]
   },
@@ -145,28 +215,28 @@
   ],
   "mappings": [
     {
+      "field": "salesforceB2bCommerce_isArchived",
+      "header": "IsArchived",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceB2bCommerce_lastModifiedDate",
+      "header": "LastModifiedDate",
+      "subfieldPath": []
+    },
+    {
       "field": "landingPageUrl",
       "header": "DisplayUrl",
       "subfieldPath": []
     },
     {
+      "field": "salesforceB2bCommerce_isDeleted",
+      "header": "IsDeleted",
+      "subfieldPath": []
+    },
+    {
       "field": "richTextDescription",
       "header": "Description",
-      "subfieldPath": []
-    },
-    {
-      "field": "sku",
-      "header": "StockKeepingUnit",
-      "subfieldPath": []
-    },
-    {
-      "field": "entityId",
-      "header": "Id",
-      "subfieldPath": []
-    },
-    {
-      "field": "name",
-      "header": "Name",
       "subfieldPath": []
     },
     {
@@ -185,23 +255,118 @@
       "subfieldPath": []
     },
     {
-      "field": "salesforceB2bCommerce_lastModifiedDate",
-      "header": "LastModifiedDate",
-      "subfieldPath": []
-    },
-    {
       "field": "salesforceB2bCommerce_family",
       "header": "Family",
       "subfieldPath": []
     },
     {
-      "field": "salesforceB2bCommerce_isDeleted",
-      "header": "IsDeleted",
+      "field": "sku",
+      "header": "StockKeepingUnit",
       "subfieldPath": []
     },
     {
-      "field": "salesforceB2bCommerce_isArchived",
-      "header": "IsArchived",
+      "field": "entityId",
+      "header": "Id",
+      "subfieldPath": []
+    },
+    {
+      "field": "name",
+      "header": "Name",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceB2bCommerce_lastReferencedDate",
+      "header": "LastReferencedDate",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceB2bCommerce_lastViewedDate",
+      "header": "LastViewedDate",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceB2bCommerce_quantityUnitOfMeasure",
+      "header": "QuantityUnitOfMeasure",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceB2bCommerce_externalID",
+      "header": "ExternalId",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceB2bCommerce_externalDataSourceID",
+      "header": "ExternalDataSourceId",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceB2bCommerce_canUseQuantitySchedule",
+      "header": "CanUseQuantitySchedule",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceB2bCommerce_canUseRevenueSchedule",
+      "header": "CanUseRevenueSchedule",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceB2bCommerce_connectionReceivedID",
+      "header": "ConnectionReceivedId",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceB2bCommerce_connectionSentID",
+      "header": "ConnectionSentId",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceB2bCommerce_currencyISOCode",
+      "header": "CurrencyIsoCode",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceB2bCommerce_numberOfQuantityInstallments",
+      "header": "NumberOfQuantityInstallments",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceB2bCommerce_numberOfRevenueInstallments",
+      "header": "NumberOfRevenueInstallments",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceB2bCommerce_productClass",
+      "header": "ProductClass",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceB2bCommerce_quantityInstallmentPeriod",
+      "header": "QuantityInstallmentPeriod",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceB2bCommerce_quantityScheduleType",
+      "header": "QuantityScheduleType",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceB2bCommerce_recalculateTotalPrice",
+      "header": "RecalculateTotalPrice",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceB2bCommerce_revenueInstallmentPeriod",
+      "header": "RevenueInstallmentPeriod",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceB2bCommerce_revenueScheduleType",
+      "header": "RevenueScheduleType",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceB2bCommerce_type",
+      "header": "Type",
       "subfieldPath": []
     }
   ],

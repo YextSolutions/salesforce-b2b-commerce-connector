@@ -4,14 +4,32 @@
   "name": "SF Product",
   "entityType": "product",
   "fields": [
+    "salesforceB2bCommerce_canUseQuantitySchedule",
+    "salesforceB2bCommerce_canUseRevenueSchedule",
+    "salesforceB2bCommerce_connectionReceivedID",
+    "salesforceB2bCommerce_connectionSentID",
     "salesforceB2bCommerce_createdDate",
+    "salesforceB2bCommerce_currencyISOCode",
+    "salesforceB2bCommerce_externalDataSourceID",
+    "salesforceB2bCommerce_externalID",
     "salesforceB2bCommerce_family",
     "salesforceB2bCommerce_isActive",
     "salesforceB2bCommerce_isArchived",
     "salesforceB2bCommerce_isDeleted",
     "salesforceB2bCommerce_lastModifiedDate",
+    "salesforceB2bCommerce_lastReferencedDate",
+    "salesforceB2bCommerce_lastViewedDate",
+    "salesforceB2bCommerce_numberOfQuantityInstallments",
+    "salesforceB2bCommerce_numberOfRevenueInstallments",
+    "salesforceB2bCommerce_productClass",
     "salesforceB2bCommerce_productCode",
-    "salesforceB2bCommerce_quantityUnitOfMeasure"
+    "salesforceB2bCommerce_quantityInstallmentPeriod",
+    "salesforceB2bCommerce_quantityScheduleType",
+    "salesforceB2bCommerce_quantityUnitOfMeasure",
+    "salesforceB2bCommerce_recalculateTotalPrice",
+    "salesforceB2bCommerce_revenueInstallmentPeriod",
+    "salesforceB2bCommerce_revenueScheduleType",
+    "salesforceB2bCommerce_type"
   ],
   "required": []
 }

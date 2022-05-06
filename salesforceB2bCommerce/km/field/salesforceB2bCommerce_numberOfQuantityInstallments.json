@@ -1,0 +1,11 @@
+{
+  "$id": "salesforceB2bCommerce_numberOfQuantityInstallments",
+  "$schema": "https://schema.yext.com/config/km/field/v1",
+  "displayName": "Number of Quantity Installments",
+  "group": "NONE",
+  "localization": "PRIMARY_ONLY",
+  "type": {
+    "decimalType": {}
+  },
+  "typeId": "decimal"
+}

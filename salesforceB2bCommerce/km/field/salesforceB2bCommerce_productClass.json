@@ -1,5 +1,5 @@
 {
-  "$id": "c_productClass",
+  "$id": "salesforceB2bCommerce_productClass",
   "$schema": "https://schema.yext.com/config/km/field/v1",
   "displayName": "Product Class",
   "group": "NONE",

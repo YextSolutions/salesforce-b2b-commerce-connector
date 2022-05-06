@@ -52,7 +52,7 @@ Follow the step-by-step instructions below to install the Salesforce B2B Commerc
 
 # How to Install
 
-If you are an existing Yext customer, you can install the  Slack Public Content Connector here <https://www.yext.com/s/me/apps/EDIT>
+If you are an existing Yext customer, you can install the  Slack Public Content Connector here <https://www.yext.com/s/me/apps/80855>
 
 If you are currently using a Yext sandbox account, you can install the Slack Public Content Connector here <https://sandbox.yext.com/s/me/apps/149910>.
 
